@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><!-- charset -->
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"><!-- charset -->
+	<meta name="author" content="chenxu"><!-- author -->
+	<meta name="keywords" content="HTML,chenxu,CSS,PHP,Linux,Blog"><!-- keywords -->
+	<meta name="description" content="chenxu's study and life blog"><!-- description -->
+	<meta http-equiv="pragma" content="no-cache"><!-- cache -->
+	<!--<meta http-equiv="Refresh" content="5;url=http://www.baidu.com">--><!-- Refresh -->
+	<title>Page Title</title><!-- title -->
+	<link rel="stylesheet" type="text/css" href=""><!-- css -->
+	<link rel="shortcut icon" type="images/x-icon" href=""><!-- icon -->
+	<base href="http://www.site.com/menu/"><!-- href base -->
+	<base target="_blank"><!-- href target -->
+	<script type="text/javascript" src=""></script><!-- js -->
+	<!-- css -->
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+<table summary="table description">
+	<caption>table title</caption>
+	<thead>
+		<tr>
+			<th>head1</th>
+			<th>head2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>item1</td>
+			<td>item2</td>
+		</tr>
+	</tbody>
+	<tfoot>
+
+	</tfoot>
+</table>
+<!-- 
+@method: post / get
+@action: url
+@enctype: 
+	multipart/form-data     (file)
+	text/plain      (much plain text)
+	application/x-www-form-urlencoded     (default plain text)
+ -->
+<form method="post" action="" enctype="mutilpart/form-data">
+	<fieldset>
+		<legend>fill your information</legend>
+		<table>
+			<tr>
+				<th><label for="user-name">user name</label></th>
+				<td><input type="text" name="user-name" id="user-name" placeholder="input your name in 2-16 character"></td>
+			</tr>
+			<tr>
+				<th><label for="password">password</label></th>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+			<tr>
+				<th><label>sex</label></th>
+				<td>
+					<label for="male">male</label><input type="radio" name="sex" value="1" id="male" checked="checked">
+					<label for="female">female</label><input type="radio" name="sex" value="0" id="female">
+				</td>
+			</tr>
+			<tr>
+				<th><label>your favorite fruit</label></th>
+				<td>
+					<label for="apple">apple</label><input type="checkbox" name="fruit" value="apple" id="apple" checked="checked">
+					<label for="banana">banana</label><input type="checkbox" name="fruit" value="banana" id="banana">
+					<label for="strawberry">strawberry</label><input type="checkbox" name="fruit" value="strawberry" id="strawberry">
+					<label for="peach">peach</label><input type="checkbox" name="fruit" value="peach" id="peach">
+				</td>
+			</tr>
+			<tr>
+				<th>your favorite language</th>
+				<td>
+					<select name="language" multiple="multiple">
+						<optgroup label="front-language">
+							<option value="html5" selected="selected">html5</option>
+							<option value="javascript">javascript</option>
+							<option value="css">css</option>
+						</optgroup>
+						<optgroup label="back-language">
+							<option value="php">php</option>
+							<option value="java">java</option>
+							<option value="jsp">jsp</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th><label for="description">descript yourself</label></th>
+				<td><textarea cols="30" rows="10" id="description" name="description" placeholder="descript yourself"></textarea></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td>
+					<input type="button" name="regular-button" value="useless button">
+					<input type="hidden" name="hidden" value="hidden-value">
+					<input type="submit" name="submit" value="submit">
+					<input type="reset" name="reset" value="reset">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>
